@@ -8,5 +8,9 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: 'projects',
+});
+
 const { id } = useRoute().params;
 </script>
