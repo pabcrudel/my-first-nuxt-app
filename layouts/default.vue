@@ -8,5 +8,11 @@
       </ul>
     </nav>
   </header>
-  <NuxtPage/>
+  <slot />
 </template>
+
+<style scoped>
+.router-link-exact-active {
+  color: #12b488;
+}
+</style>
