@@ -1,14 +1,19 @@
 <template>
-  <header>
-    <nav>
+  <header class="shadow-sm bg-white">
+    <nav class="container mx-auto p-4 flex justify-between">
       <ul>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/" class="font-bold">Home</NuxtLink></li>
+      </ul>
+      <ul class="flex gap-4">
         <li><NuxtLink to="/about">About</NuxtLink></li>
         <li><NuxtLink to="/projects">Projects</NuxtLink></li>
       </ul>
     </nav>
   </header>
-  <slot />
+
+  <div class="container mx-auto p-4">
+    <slot />
+  </div>
 </template>
 
 <style scoped>
